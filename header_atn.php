@@ -1,9 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<?php  
+	$db = parse_url(getenv("DATABASE_URL"));
+
+	$pdo = new PDO("pgsql:" . sprintf(
+    		"host=%s;port=%s;user=%s;password=%s;dbname=%s",
+   			 $db["host"],
+    		 $db["port"],
+   			 $db["user"],
+    		 $db["pass"],
+    			ltrim($db["path"], "/")
+			));
+			?>
+</body>
+</html>
 <div class="top">
 		<table width="1239px">
 			<tr>
-				<td><a href="./home1.php"><img src="./images/logo.jpg" alt="" width="160px" height="160px"></a></td>
+				<td><img src="https://seekvectorlogo.net/wp-content/uploads/2018/08/atn-asian-radio-vector-logo.png" alt="" width="160px" height="160px"></a></td>
 				<td style= "font-weight:bold; font-size:50px; text-align: center;">
-					Welcome to Imported Fruits
+					Welcome to ATN
 				</td>
 				<td style="text-align: right; vertical-align: bottom; padding: 20px" >
 					<form action="search.php" method="GET">
@@ -16,23 +36,23 @@
 		</table>
 
 </div>
-	<div class="menubar">
+	<!-- <div class="menubar">
 		<ul >
 			<li><a href="./home1.php">Home</a></li>
 			<li><a href="./introduction.php">Introduction</a></li>
 <!--			<li><a href="">Product</a></li> -->
 
-			<li class="dropdown">
+			<!-- <li class="dropdown">
     			<a href="./product.php" class="dropbtn">Product</a>
     			<div class="dropdown-content">
      				<?php
-						$sql = "select * from country";
-						$country = query($sql);
+						//$sql = "select * from country";
+						//$country = query($sql);
 
-						for ($i=0; $i<count($country);$i++)
+						//for ($i=0; $i<count($country);$i++)
 						{
 					?>
-							<a href="./productbycountry.php?counid=<?=$country[$i][0]?>">
+						<a href="./productbycountry.php?counid=<?=$country[$i][0]?>">
 								Fruits from <?=$country[$i][1]?>								
 							</a>
 					<?php 
@@ -45,4 +65,4 @@
 			
 		</ul>
 
-	</div>	
+	</div>	 --> -->
