@@ -2,19 +2,90 @@
 <html>
 <head>
 	<title>Imported Fruits</title>
-	<link rel="stylesheet" href="./css/style01.css"> 
+<!-- 	<link rel="stylesheet" href="./style.php">   -->
+<style type="text/css">
+	.top{
+			width: 100%;
+			height:170px;
+			background-color:white;
+			margin: 0 0 0 300px;
+		}
+			.top li{
+				display: inline-block;
+				margin-left: 840px;
+				font-size: 20px;
+			}
+			.menubar{
+				background-color: #359722;
+				font-weight: bold;
+				position: sticky;
+				top:0;
+
+			}
+			.menubar ul{
+				padding: 0;
+				margin: 0 0 0 325px;
+				list-style-type: square;
+			}
+			.menubar li{
+				display: inline-block;
+				color: #383EB1;
+			}
+			.menubar a{
+				width: 60%
+				color:red;
+				font-size: 24px;
+				line-height:50px;
+				text-decoration: none;
+				padding: 0 10px;
+				display: inline-block;
+			}
+			.menubar a:hover{
+				background-color:#FFFFFF ;
+				color:#B60B0B;
+			}
+</style>
 </head>
 <body>
 	<?php 
-		require_once("./db.php"); //link đến file kết nối database
-		require_once("./header.php");
+	//Refer to database
+		$db = parse_url(getenv("DATABASE_URL"));
+
+		$pdo = new PDO("pgsql:" . sprintf(
+   			"host=%s;port=%s;user=%s;password=%s;dbname=%s",
+   			$db["host"],
+    		$db["port"],
+  			$db["user"],
+    		$db["pass"],
+    		ltrim($db["path"], "/")
+		));
 	?>
+
+
+<div class="top">
+		<table width="1239px">
+			<tr>
+				<td><img src="https://seekvectorlogo.net/wp-content/uploads/2018/08/atn-asian-radio-vector-logo.png" alt="" width="160px" height="160px"></a></td>
+				<td style= "font-weight:bold; font-size:50px; text-align: center;">
+					Welcome to ATN
+				</td>
+				<td style="text-align: right; vertical-align: bottom; padding: 20px" >
+					<form action="search.php" method="GET">
+					<div style="font-size: 24px; color: red; font-weight: bold;">Hotline to order: <br>024 36320669 or 024 36320669</div> <br>
+					<input type="text" name="search"> <input type="submit" value="Search">
+					
+					</form>
+				 </td>
+			</tr>
+		</table>
+
+</div>
 		
 		
 	
-	<div class="content">
+	<!-- <div class="content">
 		<?php 
-			require_once("./left.php");
+			require_once("./left_atn.php");
 		?>
 		
 
@@ -36,6 +107,14 @@
 				<?php 
 				$sql = "select * from product";
 				$pros = query($sql);
+
+				//////////////
+				$stmt = $pdo->prepare($sql);
+				//execute the query on the server and return the result set
+				$stmt->setFetchMode(PDO::FETCH_ASSOC);
+				$stmt->execute();
+				$resultSet = $stmt->fetchAll();
+				?>
 
 				?>
 				<div class="product">
@@ -148,7 +227,7 @@
 
 
 		<?php 
-			require_once("./right.php");
+			require_once("./right_atn.php");
 		?>
 	</div>
 
@@ -156,8 +235,8 @@
 	
 <!-- link Footer -->
 	<?php 
-		require_once("./footer.php");
-	?>
+		require_once("./footer_atn.php");
+	?> -->
 	
 </body>
 </html>
