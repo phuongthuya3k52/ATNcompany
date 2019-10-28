@@ -304,7 +304,7 @@
 					?>
     			</div>
   			</li>
-			<li><a href="./contact.php">Contact</a></li>
+			<li><!-- <a href="./contact.php"> -->Contact<!-- </a> --></li>
 
 			
 		</ul>
@@ -317,18 +317,18 @@
 	
 	<div class="content">
 		<div class="leftmain">
-			<div>a</div>
+			<div>aaaaaaaaaaaa</div>
 		</div>
 		
 
 		<div class="main">
-			<div>H</div>
+			<div>Haaaaaaaaaaaaaaa</div>
 
 		</div>
 
 
 		<div class="rightmain">
-			<div>M</div>
+			<div>Maaaaaaaaaaaa</div>
 		</div>
 	</div>
 
