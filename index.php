@@ -71,6 +71,176 @@
 
 			.dropdown-content a:hover {background-color: #C6C6C6;}
 
+	.content{
+			height:1170px;
+			width: 100%;
+			float:left;
+			background-color:yellow;
+			overflow: visible;
+		}
+		.leftmain{
+				height: 1170px;
+				width: 300px;
+				float:left;	
+				background-color: white;		
+			}
+			.leftmain div{
+				position: sticky;
+				top:50px;
+				text-align: center;
+			}
+		.main{
+				overflow: auto;
+				width: 1277px;
+				float:left;
+				height: 1170px;
+				background-color:#FFD3DF;	
+			}
+			.button1 {
+				height: 400px;
+				width: 400px;
+  				background-color: white; 
+ 				color: black; 
+  				border: 10px solid #4CAF50;
+  				float: right;
+				}
+			.title{
+				font-size: 26px; width: 100%; text-align: center; font-weight: bold;
+			}
+			.product{
+				background-color:#FFD3DF;
+				height: 345px;
+				width: 297px;
+				margin: 0.5%;
+				float:left;
+			}
+			.name{
+				background-color: #D4A5FC;
+				font-size: 20px;
+				font-weight: bold;
+				text-align: center;
+				vertical-align: middle;
+				vertical-align: middle;
+				height:42.5px;
+			}
+			.image{
+				background-color:#FFFFFF;
+				height:225px;
+			}
+			.price{
+				background-color: #D4A5FC;
+				font-size: 22px;
+				font-weight: bold;
+				text-align: center;
+				vertical-align: middle;
+				height:41.5px;
+			}
+			.button2{
+				height: 41.5px;
+				width: 120px;
+  				background-color: white; 
+ 				color: red; 
+ 				font-weight:bold;
+ 				font-size:24px;
+  				border: 5px solid #4CAF50;
+  				float: right;
+			}
+			.imgdetail{
+				height: 500px;
+				width: 700px;
+				background-color: white;
+				float: left;
+				border: 1px solid black;
+			}
+			.imginfo{
+				height: 500px;
+				width:400px;
+				background-color: white;
+				float: right;
+				margin-right: 80px;
+				border: 1px solid black;
+			}
+				.imginfo th{
+					font-size: 40px;
+					font-weight: bolder;
+					color: purple;
+				}
+				.imginfo li {
+					font-size: 22px;
+					font-weight: bolder;
+					color: green;
+					margin-left: 20px;
+				}
+				.imginfo td{
+					font-size: 20px;
+				}
+				.button3{
+				height: 50px;
+				width: 170px;
+				margin-left: 20px;
+  				background-color: red; 
+ 				color: white; 
+ 				font-weight:bold;
+ 				font-size:26px;
+ 				text-align: center;
+ 				vertical-align: middle;
+  				border: 3px solid black;
+  				float: left;
+  				text-decoration: none;
+			}
+			.detai{
+				float: left;
+				height: 400px;
+				width: 1200px;
+				text-align: justify;
+			}
+				.detai li{
+					font-weight:bold;
+					font-size: 22px;
+					color: green;
+				}
+				.detai div{
+					font-size: 20px;
+				}
+				
+			.text{
+				height: 25px; width: 250px;
+			}	
+			.text1{
+				height: 300px; width: 250px; overflow: auto;
+			}
+
+			.pagenumber{
+				text-align: center; float: left; width: 100%;
+			}
+				.pagenumber a{
+					text-decoration: none;
+					color: black;
+				}
+			
+			.rightmain{
+				height: 1170px;
+				width: 310px;
+				float:right;	
+				background-color: white;				
+			}
+				.rightmain div{
+					position: sticky;
+					top:50px;
+					text-align: center;
+				}
+	.footer{
+			height:150px;
+			clear:both;
+			background-color:#EAE6E6;
+			color:black;
+		}
+		.footer a{
+				text-decoration: none;
+			}
+		.footer th{
+				font-size: 20px;				
+			}
 
 </style>
 </head>
@@ -116,7 +286,14 @@
     			<div class="dropdown-content">
      				<?php
 						$sql = "select * from Category";
-						$Category = query($sql);
+						//////////////////////////////////////
+						$stmt = $pdo->prepare($sql);
+						//execute the query on the server and return the result set
+						$stmt->setFetchMode(PDO::FETCH_ASSOC);
+						$stmt->execute();
+						$resultSet = $stmt->fetchAll();
+						$Category = $resultSet;
+				
 
 						for ($i=0; $i<count($Category);$i++)
 						{
@@ -141,9 +318,9 @@
 		
 	
 	<div class="content">
-		<?php 
-			require_once("./left_atn.php");
-		?>
+		<div class="leftmain">
+			<!-- <div ><img src="./images/Baner.jpg" alt="" width="250px"></div> -->
+		</div>
 		
 
 		<div class="main">
@@ -282,17 +459,52 @@
 		</div>
 
 
-		<?php 
-			require_once("./right_atn.php");
-		?>
+		<div class="rightmain">
+			<!-- <div><img src="./images/Baner.jpg" alt="" width="250px"></div>  -->
+		</div>
 	</div>
 
 
 	
 <!-- link Footer -->
-	<?php 
-		require_once("./footer_atn.php");
-	?> 
+	<div class="footer">
+		<table align="center" cellspacing="15px;" >
+			<tr>
+							
+				<th>Introduction</th>
+				<td></td>
+				<th colspan="2">Address</th>
+				
+						
+			</tr>
+			<tr>
+				
+				<td>
+					The system of Imported Fruits fresh fruit stores <br>
+					provides high quality fruits imported from reputable <br>
+					countries from the US, Australia, Canada, South Africa, <br>
+					New Zealand, Japan, Korea... 
+					<a href="introduction.php"><i>more</i></a>			
+					
+ 				</td>
+				<td></td>
+
+				<td> 
+					<li>20 Hai Ba Trung street, Hoan Kiem distric <br>   024 36320669/ 0961205601 </li>
+					
+				</td>
+				<td>
+					<li>100 Cau Giay street, Cau Giay distric <br>   024 36320669/ 0961205601</li>
+					
+				</td>
+				<td>
+						
+<!--						<li><a href="">Shopping cart</a></li>  -->
+				</td>
+			
+			</tr>
+		</table>
+	</div> 
 	
 </body>
 </html>
