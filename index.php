@@ -279,8 +279,6 @@
 		<div class="menubar">
 		<ul >
 			<li><a href="./home1.php">Home</a></li>
-						<li><a href="">Product</a></li> 
-
 			 <li class="dropdown">
     			<a href="./product.php" class="dropbtn">Product</a>
     			<div class="dropdown-content">
@@ -292,14 +290,14 @@
 						$stmt->setFetchMode(PDO::FETCH_ASSOC);
 						$stmt->execute();
 						$resultSet = $stmt->fetchAll();
-						$Category = $resultSet;
+						$resultSet as $Category;
 				
 
 						for ($i=0; $i<count($Category);$i++)
 						{
 					?>
-						<a href="./productbycountry.php?counid=<?=$Category[$i][0]?>">
-								Toys of the type: <?=$Category[$i][1]?>								
+						<a href="./productbycat.php?idCat=<?=$Category[$i][0]?>">
+								<?=$Category[$i][1]?>								
 							</a>
 					<?php 
 						}
@@ -324,7 +322,7 @@
 		
 
 		<div class="main">
-			<div></div>
+			<!-- <div></div>
 			<p>
 				<img src="./images/fruits.jpg" alt="" height="400px" width="800px">
 				<button class="button1">
@@ -454,7 +452,7 @@
 					</div>
 				</div>	
 					
-			</div>		
+			</div>	 -->	
 
 		</div>
 
