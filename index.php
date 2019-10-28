@@ -44,6 +44,34 @@
 				background-color:#FFFFFF ;
 				color:#B60B0B;
 			}
+			.dropdown {display: inline-block;}
+			.dropdown:hover .dropdown-content {display: block;}
+			.dropbtn {
+  				display: inline-block;  				
+  				text-align: center;
+  				text-decoration: none;
+  				background-color: #359722;
+			}
+			.dropdown-content {
+  				display: none;
+ 			 	position: absolute;
+ 			 	background-color: #f9f9f9;
+			 	min-width: 170px;
+ 			 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  				z-index: 1;
+			}
+
+			.dropdown-content a {
+ 			 	color: black;
+  				padding: 5px 15px;
+  				text-decoration: none;
+  				display: block;
+  				text-align: left;
+			}
+
+			.dropdown-content a:hover {background-color: #C6C6C6;}
+
+
 </style>
 </head>
 <body>
@@ -78,12 +106,41 @@
 				 </td>
 			</tr>
 		</table>
+		<div class="menubar">
+		<ul >
+			<li><a href="./home1.php">Home</a></li>
+						<li><a href="">Product</a></li> 
+
+			 <li class="dropdown">
+    			<a href="./product.php" class="dropbtn">Product</a>
+    			<div class="dropdown-content">
+     				<?php
+						$sql = "select * from Category";
+						$Category = query($sql);
+
+						for ($i=0; $i<count($Category);$i++)
+						{
+					?>
+						<a href="./productbycountry.php?counid=<?=$Category[$i][0]?>">
+								Toys of the type: <?=$Category[$i][1]?>								
+							</a>
+					<?php 
+						}
+					?>
+    			</div>
+  			</li>
+			<li><a href="./contact.php">Contact</a></li>
+
+			
+		</ul>
+
+	</div>	 
 
 </div>
 		
 		
 	
-	<!-- <div class="content">
+	<div class="content">
 		<?php 
 			require_once("./left_atn.php");
 		?>
@@ -217,7 +274,6 @@
 					</div>
 					<div class="price">
 						Price: <?=$pros[2][4]?>$
-					<!--	<button class="button2"><a href=""></a>Buy</button>  -->
 					</div>
 				</div>	
 					
@@ -236,7 +292,7 @@
 <!-- link Footer -->
 	<?php 
 		require_once("./footer_atn.php");
-	?> -->
+	?> 
 	
 </body>
 </html>
