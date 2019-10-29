@@ -4,7 +4,7 @@ if(isset($_POST["username"]) && isset($_POST["pass"]))
 {
 	$user = $_POST["username"];
 	$pass = $_POST["pass"];
-	$sql ="SELECT * FROM account WHERE username = '$user' AND pass= '$pass'";
+	$sql ="SELECT * FROM account WHERE username = '$user' AND password= '$pass'";
 	$rows = pg_query($sql);
 	if(pg_num_rows($rows)==1) { ?>
 		<script>
@@ -53,7 +53,7 @@ if(isset($_POST["username"]) && isset($_POST["pass"]))
 			</tr>
 	<?php
         require_once 'connect.php';
-        $sql = "SELECT * FROM product"; 
+        $sql = "SELECT * FROM Toy"; 
         $stmt = $pdo->prepare($sql); 
         $stmt->setFetchMode(PDO::FETCH_ASSOC); 
         $stmt->execute();
@@ -61,14 +61,14 @@ if(isset($_POST["username"]) && isset($_POST["pass"]))
         foreach ($resultSet as $row) {
         ?>
 			<tr>
-				<td class="Bz"><?= $row['productid']?></td> 
+				<td class="Bz"><?= $row['idtoy']?></td> 
 				<td class="Bz"><?= $row['image']?></td> 
-				<td class="Bz"><?= $row['name']?></td>
+				<td class="Bz"><?= $row['toyname']?></td>
 				<td class="Bz"><?= $row['price']?></td>
-				<td class="Bz"><?= $row['detail']?></td>
+				<td class="Bz"><?= $row['decrips']?></td>
 				<td>
 				<form action='/delete.php' method="POST">
-		        	<input type='hidden' name='productid' value='<?php echo $row['productid']?>'>
+		        	<input type='hidden' name='idtoy' value='<?php echo $row['idtoy']?>'>
 		        	<input class="edit-btn" type='submit' value='Delete'>
 		        </form> <br>
 		        </td>
