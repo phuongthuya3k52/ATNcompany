@@ -64,7 +64,7 @@ if(isset($_POST["username"]) && isset($_POST["pass"]))
         ?>
 			<tr>
 				<td class="Bz"><?= $row['idtoy']?></td> 
-				<td class="Bz"> <img src=" <?= $row['image']?>" alt="" width="100%" height="100%"></td> 
+				<td class="Bz"> <img src=" <?= $row['image']?>" alt="" ></td> 
 				<td class="Bz"><?= $row['toyname']?></td>
 				<td class="Bz"><?= $row['idcat']?></td>
 				<td class="Bz"><?= $row['brand']?></td>
