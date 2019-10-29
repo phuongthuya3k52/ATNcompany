@@ -79,13 +79,13 @@ body {
 
 /* Left and right column */
 .column.side {
-  width: 15%;
+  width: 10%;
   background-color: green;
 }
 
 /* Middle column */
 .column.middle {
-  width: 70%;
+  width: 80%;
 
 }
 
