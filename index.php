@@ -99,7 +99,7 @@ body {
 	height: 345px;
 	width: 30%;
 	margin: 1%;
-	/*float:left;*/
+	float:left;
 }
 .name{
 	background-color: #D4A5FC;
@@ -229,7 +229,7 @@ body {
 	  </div>
 	  
 	  <div class="column middle">
-	  		<div class="product" >
+	  	
 	  			<?php
 					$sql = "select * from Toy";
 
@@ -244,27 +244,19 @@ body {
 				?>
 				<?php
 					foreach($resultSet as $row)
-					{					
-
+					{	
+				?>				
+						<div class="product" >
+				<?php			
 						echo "<div class='name'>".$row["toyname"] ."</div>";		
 						echo "<div class='image'><img src='" .$row["image"] ."' alt='' width='100%' height='100%'></div>";
 						echo "<div class='price'>".$row["price"] ."</div>";	
-
+				?>
+						</div>
+				<?php
 					}
 				?>	
 
-
-
-					
-					<!-- <div class="image">
-						<a href="./productdetail.php?pid=<?=$pros[0][0]?>">
-							<img src="<?=$pros[0][5]?>" alt="" width="100%" height="100%">
-						</a>				
-					</div>
-					<div class="price">
-						Price: <?=$pros[0][4]?>$
-						
-					</div> -->
 			</div>
 	</div>
 	  
