@@ -162,7 +162,7 @@ body {
 						foreach($resultSet as $row)
 						{
 
-							echo "<h4>".$row["catname"]."</h4>";		
+							echo "<a>".$row["catname"]."</a>";		
 
 						}
 					?>		
