@@ -241,12 +241,15 @@ body {
 					foreach($resultSet as $row)
 					{					
 
-						echo "<div class='name'>".$row["toyname"]."</div>";		
-						echo "<div class='image><img src='".$row["image"]."' alt='' with='100%' height='100%'></div>";
-						echo "<div class='price'>".$row["price"]."</div>";	
+						echo "<div class='name'>".$row["toyname"] ."</div>";		
+						echo "<div class='image'><img src='" .$row["image"] ."' alt='' with='100%' height='100%'></div>";
+						echo "<div class='price'>".$row["price"] ."</div>";	
 
 					}
 				?>	
+
+
+
 					
 					<!-- <div class="image">
 						<a href="./productdetail.php?pid=<?=$pros[0][0]?>">
