@@ -89,6 +89,36 @@ body {
 
 }
 
+
+.product{
+	background-color:#FFD3DF;
+	height: 345px;
+	width: 297px;
+	margin: 0.5%;
+	float:left;
+}
+.name{
+	background-color: #D4A5FC;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+	vertical-align: middle;
+	height:42.5px;
+	}
+.image{
+	background-color:#FFFFFF;
+	height:225px;
+	}
+.price{
+	background-color: #D4A5FC;
+	font-size: 22px;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+	height:41.5px;
+	}
+
 /* Clear floats after the columns */
 .row:after {
   content: "";
@@ -187,22 +217,54 @@ body {
 	</nav>
 
 
+	<div class="row">
+	  <div class="column side">
+	    <h2>Side</h2>
+	    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+	  </div>
+	  
+	  <div class="column middle">
+	  		<div class="product">
+	  			<?php
+					$sql = "select * from Toy";
 
-<div class="row">
-  <div class="column side">
-    <h2>Side</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
-  </div>
-  
-  <div class="column middle">
-    
-  </div>
-  
-  <div class="column side">
-    <h2>Side</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
-  </div>
-</div>
+					//////////////////////////////////////
+					$stmt = $pdo->prepare($sql);
+
+					//execute the query on the server and return the result set
+					$stmt->setFetchMode(PDO::FETCH_ASSOC);
+					$stmt->execute();
+					$resultSet = $stmt->fetchAll();
+						
+				?>
+				<?php
+					foreach($resultSet as $row)
+					{					
+
+						echo "<div class='name'>".$row["toyname"]."</div>";		
+						echo "<div class='image><img src='".$row["image"]."' alt='' with='100%' height='100%'></div>";
+						echo "<div class='price'>".$row["price"]."</div>";	
+
+					}
+				?>	
+					
+					<!-- <div class="image">
+						<a href="./productdetail.php?pid=<?=$pros[0][0]?>">
+							<img src="<?=$pros[0][5]?>" alt="" width="100%" height="100%">
+						</a>				
+					</div>
+					<div class="price">
+						Price: <?=$pros[0][4]?>$
+						
+					</div> -->
+			</div>
+	</div>
+	  
+	  <div class="column side">
+	    <h2>Side</h2>
+	    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+	  </div>
+	</div>
 
 <div class="footer">
   <table align="center" cellspacing="15px;">
