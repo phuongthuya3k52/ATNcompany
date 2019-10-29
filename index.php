@@ -257,7 +257,7 @@ body {
 					}
 				?>	
 
-			</div>
+			
 	</div>
 	  
 	  <div class="column side">
