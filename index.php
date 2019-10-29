@@ -87,7 +87,7 @@ body {
 .column .middle {
   width: 60%;
   overflow: auto;
-  float: right;
+  float: left;
   height: 1170px;
   background-color:#FFD3DF;
 
@@ -99,7 +99,7 @@ body {
 	height: 345px;
 	width: 30%;
 	margin: 1%;
-	float:right;
+	float:left;
 }
 .name{
 	background-color: #D4A5FC;
