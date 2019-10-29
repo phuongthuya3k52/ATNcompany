@@ -97,7 +97,7 @@ body {
 .product{
 	background-color:#FFD3DF;
 	height: 345px;
-	width: 25%;
+	width: 15%;
 	margin: 0.5%;
 	float:left;
 }
