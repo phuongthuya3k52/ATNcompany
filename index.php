@@ -84,10 +84,10 @@ body {
 }
 
 /* Middle column */
-.column .middle {
+.column.middle {
   width: 60%;
   overflow: auto;
-  float: right;
+  float: left;
   height: 1170px;
   background-color:#FFD3DF;
 
@@ -99,7 +99,7 @@ body {
 	height: 345px;
 	width: 30%;
 	margin: 1%;
-	float:right;
+	/*float:left;*/
 }
 .name{
 	background-color: #D4A5FC;
@@ -252,6 +252,19 @@ body {
 
 					}
 				?>	
+
+
+
+					
+					<!-- <div class="image">
+						<a href="./productdetail.php?pid=<?=$pros[0][0]?>">
+							<img src="<?=$pros[0][5]?>" alt="" width="100%" height="100%">
+						</a>				
+					</div>
+					<div class="price">
+						Price: <?=$pros[0][4]?>$
+						
+					</div> -->
 			</div>
 	</div>
 	  
