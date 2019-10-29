@@ -41,6 +41,35 @@ body {
   color: black;
 }
 
+.dropdown {display: inline-block;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropbtn {
+  	display: inline-block;  				
+  	text-align: center;
+  	text-decoration: none;
+  	background-color: #359722;
+}
+			
+.dropdown-content {
+  	display: none;
+ 	position: absolute;
+ 	background-color: #f9f9f9;
+	min-width: 170px;
+ 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  	z-index: 1;
+}
+
+.dropdown-content a {
+ 	color: black;
+  	padding: 5px 15px;
+  	text-decoration: none;
+  	display: block;
+  	text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #C6C6C6;}
+
+
 /* Create three unequal columns that floats next to each other */
 .column {
   float: left;
@@ -56,6 +85,7 @@ body {
 /* Middle column */
 .column.middle {
   width: 50%;
+
 }
 
 /* Clear floats after the columns */
@@ -114,9 +144,31 @@ body {
 	</div>
 
 	<div class="topnav">
-  <a href="#">Home</a>
-  <a href="#">Product</a>
-  <a href="#">Link</a>
+  		<a href="#">Home</a>
+  		<a href="#">Product</a>
+ 		<div class="dropdown-content">
+     				<?php
+						$sql = "select * from Category";
+						//////////////////////////////////////
+						$stmt = $pdo->prepare($sql);
+						//execute the query on the server and return the result set
+						$stmt->setFetchMode(PDO::FETCH_ASSOC);
+						$stmt->execute();
+						$resultSet = $stmt->fetchAll();
+						$resultSet as $Category;
+				
+
+						for ($i=0; $i<count($Category);$i++)
+						{
+					?>
+						<a href="./productbycat.php?idCat=<?=$Category[$i][0]?>">
+								<?=$Category[$i][1]?>								
+							</a>
+					<?php 
+						}
+					?>
+    	</div>
+  <a href="#">Contact</a>
 </div>
 
 <div class="row">
