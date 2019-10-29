@@ -167,7 +167,7 @@ body {
 							</a>
 					
 						}
-					?>			
+					?>		
     	</div>
   <a href="#">Contact</a>
 </div>
