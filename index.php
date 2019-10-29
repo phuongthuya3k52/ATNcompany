@@ -97,11 +97,11 @@ body {
 .column.product{
 	background-color:#FFD3DF;
 	height: 345px;
-	width: 20%;
+	width: 18%;
 	margin: 0.5%;
 	float:left;
 }
-.product.name{
+.name{
 	background-color: #D4A5FC;
 	font-size: 20px;
 	font-weight: bold;
@@ -110,12 +110,12 @@ body {
 	vertical-align: middle;
 	height:42.5px;
 	}
-.product.image{
+.image{
 	background-color:#FFFFFF;
 	height:225px;
-	width: 20%;
+	width: 18%;
 	}
-.product.price{
+.price{
 	background-color: #D4A5FC;
 	font-size: 22px;
 	font-weight: bold;
