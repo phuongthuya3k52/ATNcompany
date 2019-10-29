@@ -21,7 +21,7 @@
                 $brand = $_POST["brand"];
                 $price = $_POST["price"];
                 $detail = $_POST["detail"];
-                if ($name == ""|| $idcat == ""|| $brand == ""|| $price == ""|| $detail == ""||$image==""||$productid=="") 
+                if ($name == ""|| $idcat == ""|| $brand == ""|| $price == ""|| $detail == ""||$image==""||$idtoy=="") 
                     {
                         ?>
                         <script>
