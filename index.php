@@ -3,6 +3,17 @@
 <head>
 	<title>ATN</title>
 <!-- 	<link rel="stylesheet" href="./style.php">   -->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <style>
 * {
   box-sizing: border-box;
@@ -132,13 +143,26 @@ body {
 			</tr>
 		</table>
 	</div>
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+	  <!-- Brand -->
+	  <a class="navbar-brand" href="#">Logo</a>
 
-	<div class="topnav">
-  		<a href="#">Home</a>
-  		<div class="dropdown">
-  			<a href="#">Product</a>
-			<div class="dropdown-content">
-     				<?php
+	  <!-- Links -->
+	  <ul class="navbar-nav">
+	    <li class="nav-item">
+	      <a class="nav-link" href="#">Home</a>
+	    </li>
+	    <li class="nav-item">
+	      <a class="nav-link" href="#">Contact</a>
+	    </li>
+
+	    <!-- Dropdown -->
+	    <li class="nav-item dropdown">
+	      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+	        Product
+	      </a>
+	      <div class="dropdown-menu">
+	      			<?php
 						$sql = "select catname from Category";
 
 						//////////////////////////////////////
@@ -155,15 +179,27 @@ body {
 						foreach($resultSet as $row)
 						{					
 
-							echo "<p><a>".$row["catname"]."</a></p>";		
+							echo "<a class="dropdown-item" href="#">".$row["catname"]."</a>";		
 
 						}
 						?>	
+	      </div>
+	    </li>
+	  </ul>
+	</nav>
+
+<!-- 
+	<div class="topnav">
+  		<a href="#">Home</a>
+  		<div class="dropdown">
+  			<a href="#">Product</a>
+			<div class="dropdown-content">
+     				
 						
     		</div>
     	</div>
   <a href="#">Contact</a>
-</div>
+</div> -->
 
 <div class="row">
   <div class="column side">
