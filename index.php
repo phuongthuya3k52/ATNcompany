@@ -86,6 +86,10 @@ body {
 /* Middle column */
 .column.middle {
   width: 80%;
+  overflow: auto;
+  float:left;
+  height: 1170px;
+  background-color:#FFD3DF;
 
 }
 
