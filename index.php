@@ -97,7 +97,7 @@ body {
 .product{
 	background-color:#FFD3DF;
 	height: 345px;
-	width: 50%;
+	width: 30%;
 /*	margin: 0.5%;*/
 	float:left;
 }
@@ -113,7 +113,7 @@ body {
 .image{
 	background-color:#FFFFFF;
 	height:225px;
-	width: 50%;
+	width: 100%;
 	}
 .price{
 	background-color: #D4A5FC;
