@@ -97,8 +97,8 @@ body {
 .product{
 	background-color:#FFD3DF;
 	height: 345px;
-	width: 18%;
-	margin: 0.5%;
+	width: 20%;
+/*	margin: 0.5%;*/
 	float:left;
 }
 .name{
@@ -247,7 +247,7 @@ body {
 					{					
 
 						echo "<div class='name'>".$row["toyname"] ."</div>";		
-						echo "<div class='image'><img src='" .$row["image"] ."' alt='' with='100%' height='100%'></div>";
+						echo "<div class='image'><img src='" .$row["image"] ."'></div>";
 						echo "<div class='price'>".$row["price"] ."</div>";	
 
 					}
