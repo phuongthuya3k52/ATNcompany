@@ -148,7 +148,7 @@ body {
   		<a href="#">Product</a>
 		<div class="dropdown-content">
      				<?php
-						$sql = "select * from Category";
+						$sql = "select catname from Category";
 
 						//////////////////////////////////////
 						$stmt = $pdo->prepare($sql);
@@ -159,10 +159,10 @@ body {
 						$resultSet = $stmt->fetchAll();
 						
 
-						for ($i=0; $i<count($resultSet as $Category);$i++)
+						for ($i=0; $i<count($resultSet);$i++)
 						{
 
-							echo "<h4>".$Category[$i][1]."</h4>";		
+							echo "<h4>".$resultSet[$i]."</h4>";		
 
 						}
 					?>		
