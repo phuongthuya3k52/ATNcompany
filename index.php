@@ -79,13 +79,13 @@ body {
 
 /* Left and right column */
 .column.side {
-  width: 25%;
+  width: 15%;
   background-color: green;
 }
 
 /* Middle column */
 .column.middle {
-  width: 50%;
+  width: 70%;
 
 }
 
@@ -142,11 +142,9 @@ body {
 				 </td>
 			</tr>
 		</table>
+
 	</div>
 	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-	  <!-- Brand -->
-	  <a class="navbar-brand" href="#">Logo</a>
-
 	  <!-- Links -->
 	  <ul class="navbar-nav">
 	    <li class="nav-item">
@@ -188,18 +186,7 @@ body {
 	  </ul>
 	</nav>
 
-<!-- 
-	<div class="topnav">
-  		<a href="#">Home</a>
-  		<div class="dropdown">
-  			<a href="#">Product</a>
-			<div class="dropdown-content">
-     				
-						
-    		</div>
-    	</div>
-  <a href="#">Contact</a>
-</div> -->
+
 
 <div class="row">
   <div class="column side">
