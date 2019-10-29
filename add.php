@@ -17,9 +17,11 @@
                 $productid = $_POST["productid"];
                 $image = $_POST["image"];
                 $name = $_POST["name"];
+                $idcat = $_POST["idcat"];
+                $brand = $_POST["brand"];
                 $price = $_POST["price"];
                 $detail = $_POST["detail"];
-                if ($name == ""||$price == ""|| $detail == ""||$image==""||$productid=="") 
+                if ($name == ""|| $idcat == ""|| $brand == ""|| $price == ""|| $detail == ""||$image==""||$productid=="") 
                     {
                         ?>
                         <script>
@@ -41,7 +43,7 @@
                         }
                         else
                         {
-                            $sql = "INSERT INTO toy(idToy, image,toyName, price, decrips) VALUES ('$productid','$image','$name','$price','$detail')";
+                            $sql = "INSERT INTO toy(idToy,toyName,idcat,brand,price,image,decrips) VALUES ('$productid','$name','$idcat','$brand',$price','$image','$detail')";
                             pg_query($conn,$sql);
                             ?> 
                                 <script>
@@ -57,6 +59,8 @@
             <input type="text" name="productid" placeholder="ID"> <br>
             <input type="text" name="image" placeholder="Link Image"> <br>
             <input type="text" name="name" placeholder="Name"> <br>
+            <input type="text" name="idcat" placeholder="idCat"> <br>
+            <input type="text" name="brand" placeholder="Brand"> <br>
             <input type="text" name="price" placeholder="Price"> <br>
             <input type="text" name="detail" placeholder="Detail"> <br>
             <button type="submit" value="Add" name="submit">Add</button>
