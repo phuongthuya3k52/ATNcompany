@@ -9,7 +9,7 @@
 </head>
 <body>
     <div>
-        <h1>Adding Product Form</h1>
+        <div class = "header">Adding Product Form</div>
         <?php 
         require("dbconnector.php");   
         if(isset($_POST["submit"]))
@@ -61,14 +61,41 @@
             }
 			?>
         <form action="add.php" method="POST">
-            <input type="text" name="idtoy" placeholder="ID"> <br>
-            <input type="text" name="image" placeholder="Link Image"> <br>
-            <input type="text" name="name" placeholder="Name"> <br>
-            <input type="text" name="idcat" placeholder="idCat"> <br>
-            <input type="text" name="brand" placeholder="Brand"> <br>
-            <input type="text" name="price" placeholder="Price"> <br>
-            <input type="text" name="detail" placeholder="Detail"> <br>
-            <button type="submit" value="Add" name="submit">Add</button>
+            <table align="center">
+                <tr>
+                    <td>ID</td>
+                    <td><input type="text" name="idtoy"></td>
+                
+                
+                    <td>Name</td>
+                    <td><input type="text" name="name"></td>
+                </tr>
+                <tr>
+                    <td>idCat</td>
+                    <td><input type="text" name="idcat"></td>
+                
+                
+                    <td>Brand</td>
+                    <td><input type="text" name="brand"></td>
+                </tr>
+                <tr>
+                    <td>Price</td>
+                    <td><input type="text" name="price"></td>
+
+                    <td>Link Image</td>
+                    <td><input type="text" name="image"></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">Detail</td>
+                    <td colspan="2"><input type="text" name="detail"></td>
+                </tr>
+                <tr>
+                    <td><button type="submit" value="Add" name="submit">Add</button></td>
+                    <td></td>
+                </tr>
+            
+            </table>
         </form>
         
         <button><a href="/home.php">Back</a></button>
