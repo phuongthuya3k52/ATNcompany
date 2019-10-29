@@ -94,7 +94,7 @@ body {
 }
 
 
-.product{
+.column.product{
 	background-color:#FFD3DF;
 	height: 345px;
 	width: 20%;
@@ -229,7 +229,6 @@ body {
 	  </div>
 	  
 	  <div class="column middle">
-	  	<div class="col-md4">
 	  		<div class="product" >
 	  			<?php
 					$sql = "select * from Toy";
@@ -267,7 +266,6 @@ body {
 						
 					</div> -->
 			</div>
-		</div>	
 	</div>
 	  
 	  <div class="column side">
