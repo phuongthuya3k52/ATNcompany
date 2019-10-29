@@ -74,7 +74,7 @@ body {
 /* Create three unequal columns that floats next to each other */
 .column {
   float: left;
-  padding: 0px;
+  padding: 10px;
 }
 
 /* Left and right column */
@@ -97,7 +97,7 @@ body {
 .product{
 	background-color:#FFD3DF;
 	height: 345px;
-	width: 30%;
+	width: 25%;
 	margin: 0.5%;
 	float:left;
 }
