@@ -229,7 +229,8 @@ body {
 	  </div>
 	  
 	  <div class="column middle">
-	  		<div class="product">
+	  		<div class="product" >
+	  			<div class= "col-md-4">
 	  			<?php
 					$sql = "select * from Toy";
 
@@ -265,6 +266,7 @@ body {
 						Price: <?=$pros[0][4]?>$
 						
 					</div> -->
+					</div>
 			</div>
 	</div>
 	  
