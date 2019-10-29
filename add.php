@@ -44,13 +44,18 @@
                         else
                         {
                             $sql = "Insert into Toy (idToy,toyName,idcat,brand,price,image,decrips) values ('$idtoy','$name','$idcat','$brand',$price','$image','$detail')";
-                            pg_query($conn,$sql);
+                            // pg_query($conn,$sql);
+                            $res =pg_query($conn, $sql);
+                            if(!$res) {
+                                echo pg_last_error($db);
+                            } else {
                             ?> 
                                 <script>
                                     alert("Added successful!");
                                     // window.location.href = "/home.php";
                                 </script>
                             <?php
+                            }
                         }
                     }
             }
