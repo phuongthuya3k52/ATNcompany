@@ -14,7 +14,7 @@
         require("dbconnector.php");   
         if(isset($_POST["submit"]))
             {   
-                $productid = $_POST["productid"];
+                $idtoy = $_POST["idtoy"];
                 $image = $_POST["image"];
                 $name = $_POST["name"];
                 $idcat = $_POST["idcat"];
@@ -43,7 +43,7 @@
                         }
                         else
                         {
-                            $sql = "INSERT INTO toy(idToy,toyName,idcat,brand,price,image,decrips) VALUES ('$productid','$name','$idcat','$brand',$price','$image','$detail')";
+                            $sql = "INSERT INTO toy(idToy,toyName,idcat,brand,price,image,decrips) VALUES ('$idtoy','$name','$idcat','$brand',$price','$image','$detail')";
                             pg_query($conn,$sql);
                             ?> 
                                 <script>
@@ -56,7 +56,7 @@
             }
 			?>
         <form action="add.php" method="POST">
-            <input type="text" name="productid" placeholder="ID"> <br>
+            <input type="text" name="idtoy" placeholder="ID"> <br>
             <input type="text" name="image" placeholder="Link Image"> <br>
             <input type="text" name="name" placeholder="Name"> <br>
             <input type="text" name="idcat" placeholder="idCat"> <br>
