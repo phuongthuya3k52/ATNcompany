@@ -1,0 +1,41 @@
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css);
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+table {border-collapse:collapse;}
+table,th, td {border: 1px solid #333;}
+th, td {height:100px; width:300px; text-align:center; vertical-align:center;}
+* {
+ box-sizing: border-box;
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ background-color: #f1f1f1;
+}
+.content {
+ padding-left: 150px;
+ padding-right: 150px;
+ position: relative;
+ left: 0;
+ width: 100%;
+}
+body {
+ font-family: Helvetica,Arial,sans-serif;
+ font-size: 16px;
+ line-height: 1.254em;
+ margin: 0;
+ padding: 0;
+}
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+.last{
+	padding-right: 49%;
+	padding-left: 49%;
+	padding-top: 20px;
+	font-size: 26;
+}
