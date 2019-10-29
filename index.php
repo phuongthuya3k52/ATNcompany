@@ -97,9 +97,9 @@ body {
 .product{
 	background-color:#FFD3DF;
 	height: 345px;
-	width: 30%;
+	width: 28%;
 	margin: 1%;
-	/*float:left;*/
+	float:left;
 }
 .name{
 	background-color: #D4A5FC;
