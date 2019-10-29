@@ -157,15 +157,13 @@ body {
 						$stmt->setFetchMode(PDO::FETCH_ASSOC);
 						$stmt->execute();
 						$resultSet = $stmt->fetchAll();
-						?>
+						
 
 						for ($i=0; $i<count($resultSet as $Category);$i++)
 						{
-					
-						<a href="./productbycat.php?idCat=<?=$Category[$i][0]?>">
-								<?=$Category[$i][1]?>								
-							</a>
-					
+
+							echo "<h4>".$Category[$i][1]."</h4>";		
+
 						}
 					?>		
     	</div>
