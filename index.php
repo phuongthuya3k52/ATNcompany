@@ -41,33 +41,24 @@ body {
   color: black;
 }
 
-.dropdown {display: inline-block;}
-.dropdown:hover .dropdown-content {display: block;}
-.dropbtn {
-  	display: inline-block;  				
-  	text-align: center;
-  	text-decoration: none;
-  	background-color: #359722;
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
-			
+
 .dropdown-content {
-  	display: none;
- 	position: absolute;
- 	background-color: #f9f9f9;
-	min-width: 170px;
- 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  	z-index: 1;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
 }
 
-.dropdown-content a {
- 	color: black;
-  	padding: 5px 15px;
-  	text-decoration: none;
-  	display: block;
-  	text-align: left;
+.dropdown:hover .dropdown-content {
+  display: block;
 }
-
-.dropdown-content a:hover {background-color: #C6C6C6;}
 
 
 /* Create three unequal columns that floats next to each other */
