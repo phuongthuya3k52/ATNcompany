@@ -47,12 +47,12 @@
                             // pg_query($conn,$sql);
                             $res =pg_query($conn, $sql);
                             if(!$res) {
-                                echo pg_last_error($db);
+                                echo pg_last_error($conn);
                             } else {
                             ?> 
                                 <script>
                                     alert("Added successful!");
-                                    // window.location.href = "/home.php";
+                                    window.location.href = "/home.php";
                                 </script>
                             <?php
                             }
