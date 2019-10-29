@@ -79,13 +79,13 @@ body {
 
 /* Left and right column */
 .column.side {
-  width: 15%;
+  width: 20%;
   background-color: green;
 }
 
 /* Middle column */
 .column.middle {
-  width: 70%;
+  width: 60%;
   overflow: auto;
   float: left;
   height: 1170px;
@@ -94,7 +94,7 @@ body {
 }
 
 
-.column.product{
+.product{
 	background-color:#FFD3DF;
 	height: 345px;
 	width: 18%;
