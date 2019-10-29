@@ -101,7 +101,7 @@ body {
 	margin: 0.5%;
 	float:left;
 }
-.name{
+.column.product.name{
 	background-color: #D4A5FC;
 	font-size: 20px;
 	font-weight: bold;
@@ -110,12 +110,12 @@ body {
 	vertical-align: middle;
 	height:42.5px;
 	}
-.image{
+.column.product.image{
 	background-color:#FFFFFF;
 	height:225px;
 	width: 20%;
 	}
-.price{
+.column.product.price{
 	background-color: #D4A5FC;
 	font-size: 22px;
 	font-weight: bold;
