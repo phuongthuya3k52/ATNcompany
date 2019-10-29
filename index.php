@@ -79,15 +79,15 @@ body {
 
 /* Left and right column */
 .column.side {
-  width: 10%;
+  width: 15%;
   background-color: green;
 }
 
 /* Middle column */
 .column.middle {
-  width: 80%;
+  width: 70%;
   overflow: auto;
-  float:left;
+  float:right;
   height: 1170px;
   background-color:#FFD3DF;
 
