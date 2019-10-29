@@ -29,7 +29,7 @@
                     }
                 else
                     {
-                        $sql = "select * from product where proname='$name'";
+                        $sql = "select * from toy where toyName='$name'";
                         $query = pg_query($conn, $sql);
                         if(pg_num_rows($query)>0)
                         {
@@ -41,7 +41,7 @@
                         }
                         else
                         {
-                            $sql = "INSERT INTO product(productid, image,name, price, detail) VALUES ('$productid','$image','$name','$price','$detail')";
+                            $sql = "INSERT INTO toy(idToy, image,toyName, price, decrips) VALUES ('$productid','$image','$name','$price','$detail')";
                             pg_query($conn,$sql);
                             ?> 
                                 <script>
