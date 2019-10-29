@@ -36,7 +36,7 @@
 						Login
 					</span>
 					<div class="wrap-input100 validate-input" data-validate = "Valid email is required" name="username">
-						<input class="input100" type="text" name="username" placeholder="Email">
+						<input class="input100" type="text" name="username" placeholder="Username">
 						<span class="focus-input100-1"></span>
 						<span class="focus-input100-2"></span>
 					</div>
