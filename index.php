@@ -162,7 +162,7 @@ body {
 						for ($i=0; $i<count($resultSet);$i++)
 						{
 
-							echo "<h4>".$resultSet[$i][1]."</h4>";		
+							echo "<h4>".$resultSet["catname"]."</h4>";		
 
 						}
 					?>		
