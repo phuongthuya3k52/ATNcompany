@@ -146,15 +146,18 @@ body {
 	<div class="topnav">
   		<a href="#">Home</a>
   		<a href="#">Product</a>
- 		<div class="dropdown-content">
+ 		<!-- <div class="dropdown-content">
      				<?php
 						$sql = "select * from Category";
+
 						//////////////////////////////////////
 						$stmt = $pdo->prepare($sql);
+
 						//execute the query on the server and return the result set
 						$stmt->setFetchMode(PDO::FETCH_ASSOC);
 						$stmt->execute();
 						$resultSet = $stmt->fetchAll();
+						?>
 
 						for ($i=0; $i<count($resultSet as $Category);$i++)
 						{
@@ -165,7 +168,7 @@ body {
 					
 						}
 					?>
-    	</div>
+    	</div> -->
   <a href="#">Contact</a>
 </div>
 
