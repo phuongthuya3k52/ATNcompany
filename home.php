@@ -48,6 +48,8 @@ if(isset($_POST["username"]) && isset($_POST["pass"]))
 				<th class="Bz">ID</th> 
 				<th class="Bz">Image</th>
 				<th class="Bz">Name</th>
+				<th class="Bz">ID Category</th>
+				<th class="Bz">Brand</th>
 				<th class="Bz">Price($)</th>
 				<th class="Bz">Detail</th>
 			</tr>
@@ -62,8 +64,10 @@ if(isset($_POST["username"]) && isset($_POST["pass"]))
         ?>
 			<tr>
 				<td class="Bz"><?= $row['idtoy']?></td> 
-				<td class="Bz"><?= $row['image']?></td> 
+				<td class="Bz"> <img src=" <?= $row['image']?>" alt="" width="100%" height="100%">  <?= $row['image']?></td> 
 				<td class="Bz"><?= $row['toyname']?></td>
+				<td class="Bz"><?= $row['idcat']?></td>
+				<td class="Bz"><?= $row['brand']?></td>
 				<td class="Bz"><?= $row['price']?></td>
 				<td class="Bz"><?= $row['decrips']?></td>
 				<td>
