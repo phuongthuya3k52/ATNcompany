@@ -247,7 +247,7 @@ body {
 					{					
 
 						echo "<div class='name'>".$row["toyname"] ."</div>";		
-						echo "<div class='image'><img src='" .$row["image"] ."'></div>";
+						echo "<div class='image'><img src='" .$row["image"] ."' alt='' width='100%' height='100%'></div>";
 						echo "<div class='price'>".$row["price"] ."</div>";	
 
 					}
