@@ -179,7 +179,7 @@ body {
 						foreach($resultSet as $row)
 						{					
 
-							echo "<a class="dropdown-item" href="#">".$row["catname"]."</a>";		
+							echo "<a class='dropdown-item' href='#'>".$row["catname"]."</a>";		
 
 						}
 						?>	
