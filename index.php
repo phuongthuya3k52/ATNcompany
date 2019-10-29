@@ -58,7 +58,21 @@ body {
 		));
 	?>
 	<div class="header">
-  		<h1>Header</h1>
+  		<table width="1239px">
+			<tr>
+				<td><img src="https://seekvectorlogo.net/wp-content/uploads/2018/08/atn-asian-radio-vector-logo.png" alt="" width="160px" height="160px"></a></td>
+				<td style= "font-weight:bold; font-size:50px; text-align: center;">
+					Welcome to ATN
+				</td>
+				<td style="text-align: right; vertical-align: bottom; padding: 20px" >
+					<form action="search.php" method="GET">
+					<div style="font-size: 24px; color: red; font-weight: bold;">Hotline to order: <br>024 36320669 or 024 36320669</div> <br>
+					<input type="text" name="search"> <input type="submit" value="Search">
+					
+					</form>
+				 </td>
+			</tr>
+		</table>
 	</div>
 
 	<div class="topnav">
