@@ -74,7 +74,7 @@ body {
 /* Create three unequal columns that floats next to each other */
 .column {
   float: left;
-  padding: 10px;
+  padding: 0px;
 }
 
 /* Left and right column */
@@ -98,7 +98,7 @@ body {
 	background-color:#FFD3DF;
 	height: 345px;
 	width: 30%;
-	margin: 1%;
+	margin: 0.5%;
 	float:left;
 }
 .name{
