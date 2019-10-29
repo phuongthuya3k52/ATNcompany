@@ -222,13 +222,13 @@ body {
 	</nav>
 
 
-	<div class="row">
-	  <div class="column side">
-	    <h2>Side</h2>
-	    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
-	  </div>
+	<div class="column">
+	    <div class="column side">
+	        <h2>Side</h2>
+	        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+	    </div>
 	  
-	  <div class="column middle">
+	    <div class="column middle">
 	  		
 	  			<?php
 					$sql = "select * from Toy";
@@ -254,12 +254,12 @@ body {
 					}
 					?>	
 				</div>
-	</div>
+	    </div>
 	  
-	  <div class="column side">
-	    <h2>Side</h2>
-	    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
-	  </div>
+	    <div class="column side">
+	        <h2>Side</h2>
+	        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+	    </div>
 	</div>
 
 <div class="footer">
