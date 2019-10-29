@@ -84,10 +84,10 @@ body {
 }
 
 /* Middle column */
-.column.middle {
+.column .middle {
   width: 60%;
   overflow: auto;
-  float: left;
+  float: right;
   height: 1170px;
   background-color:#FFD3DF;
 
@@ -223,12 +223,12 @@ body {
 
 
 	<div class="row">
-	    <div class="column side">
-	        <h2>Side</h2>
-	        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
-	    </div>
+	  <div class="column side">
+	    <h2>Side</h2>
+	    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+	  </div>
 	  
-	    <div class="column middle">
+	  <div class="column middle">
 	  		
 	  			<?php
 					$sql = "select * from Toy";
@@ -254,12 +254,12 @@ body {
 					}
 					?>	
 				</div>
-	    </div>
+	</div>
 	  
-	    <div class="column side">
-	        <h2>Side</h2>
-	        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
-	    </div>
+	  <div class="column side">
+	    <h2>Side</h2>
+	    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+	  </div>
 	</div>
 
 <div class="footer">
