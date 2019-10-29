@@ -146,7 +146,7 @@ body {
 	<div class="topnav">
   		<a href="#">Home</a>
   		<a href="#">Product</a>
- 		<!-- <div class="dropdown-content">
+		<div class="dropdown-content">
      				<?php
 						$sql = "select * from Category";
 
@@ -167,8 +167,8 @@ body {
 							</a>
 					
 						}
-					?>
-    	</div> -->
+					?>			
+    	</div>
   <a href="#">Contact</a>
 </div>
 
