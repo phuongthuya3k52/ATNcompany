@@ -99,7 +99,7 @@ body {
 	height: 345px;
 	width: 30%;
 	margin: 1%;
-	/*float:left;*/
+	float:left;
 }
 .name{
 	background-color: #D4A5FC;
