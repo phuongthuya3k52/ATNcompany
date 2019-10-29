@@ -98,8 +98,8 @@ body {
 	background-color:#FFD3DF;
 	height: 345px;
 	width: 30%;
-/*	margin: 0.5%;*/
-	float:left;
+	margin: 1%;
+	/*float:left;*/
 }
 .name{
 	background-color: #D4A5FC;
