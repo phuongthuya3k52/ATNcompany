@@ -43,7 +43,7 @@
                         }
                         else
                         {
-                            $sql = "Insert into Toy (idToy,toyName,idcat,brand,price,image,decrips) values ('$idtoy','$name','$idcat','$brand',$price','$image','$detail')";
+                            $sql = "Insert into Toy (idToy,toyName,idcat,brand,price,image,decrips) values ('$idtoy','$name','$idcat','$brand','$price','$image','$detail')";
                             // pg_query($conn,$sql);
                             $res =pg_query($conn, $sql);
                             if(!$res) {
