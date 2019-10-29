@@ -145,9 +145,9 @@ body {
 
 	<div class="topnav">
   		<a href="#">Home</a>
-  		<a href="#">Product</a>
   		<div class="dropdown">
-		<div class="dropdown-content">
+  			<a href="#">Product</a>
+			<div class="dropdown-content">
      				<?php
 						$sql = "select catname from Category";
 
