@@ -1,7 +1,7 @@
 <?php
 require("dbconnector.php");
-$id = $_POST['productid'];
-$sql = "DELETE FROM product WHERE idToy = '$id'";
+$id = $_POST['idtoy'];
+$sql = "DELETE FROM product WHERE idtoy = '$id'";
 pg_query($conn,$sql); 
 header("Location: /home.php");
 ?>
