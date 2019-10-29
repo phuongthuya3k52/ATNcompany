@@ -49,7 +49,7 @@
                             ?> 
                                 <script>
                                     alert("Added successful!");
-                                    window.location.href = "/home.php";
+                                    // window.location.href = "/home.php";
                                 </script>
                             <?php
                         }
