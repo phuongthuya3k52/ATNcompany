@@ -84,7 +84,7 @@ body {
 }
 
 /* Middle column */
-.column .middle {
+.column.middle {
   width: 60%;
   overflow: auto;
   float: left;
