@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title></title>
+
 </head>
 <body>
 	<?php  
@@ -36,13 +37,12 @@
 		</table>
 
 </div>
-	<!-- <div class="menubar">
+	<div class="menubar">
 		<ul >
 			<li><a href="./home1.php">Home</a></li>
-			<li><a href="./introduction.php">Introduction</a></li>
-<!--			<li><a href="">Product</a></li> -->
+						<li><a href="">Product</a></li> 
 
-			<!-- <li class="dropdown">
+			 <li class="dropdown">
     			<a href="./product.php" class="dropbtn">Product</a>
     			<div class="dropdown-content">
      				<?php
@@ -65,4 +65,4 @@
 			
 		</ul>
 
-	</div>	 --> -->
+	</div>	 
