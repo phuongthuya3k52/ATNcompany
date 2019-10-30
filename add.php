@@ -9,7 +9,7 @@
 </head>
 <body>
     <div>
-        <div class = "header">Adding Product Form</div>
+        <!-- <div class = "header">Adding Product Form</div> -->
         <?php 
         require("dbconnector.php");   
         if(isset($_POST["submit"]))
