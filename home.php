@@ -41,7 +41,7 @@ if(isset($_POST["username"]) && isset($_POST["pass"]))
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-		<div class="header"><h1>Product</h1></div>
+		<div class="header"><h1>List Of Products</h1></div>
 		<div class="content">
 			<form action="search.php" method="GET">
 				<div style="text-align: right">
@@ -94,6 +94,6 @@ if(isset($_POST["username"]) && isset($_POST["pass"]))
 	?>
 			</table></br>
 		</div>
-		<div class="last"><a href="/add.php" style="font-size: 24px">Add</a></div>
+		<div class="last"><a href="/add.php" style="font-size: 24px">Add New Product</a></div>
 </body>
 </html>
