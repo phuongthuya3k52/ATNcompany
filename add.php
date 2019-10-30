@@ -63,7 +63,7 @@
         <table align="center" border ="0px" style="font-size: 24px; width: 80%; text-align: right;" cellspacing="12px" >
             <form action="add.php" method="POST">
                 <tr>
-                    <td colspan="4" style="text-align:center"><h1>Adding New Product Form</h1></td>
+                    <td colspan="4" style="text-align:center"><h1 style="background-color: white, font-size:36px">Adding New Product Form</h1></td>
                 </tr>
                 <tr>
                     <td >Product ID: </td>
@@ -90,10 +90,10 @@
                     <td colspan="2" style="text-align: center;">
                         <br><br><input type="submit" value="Add" name="submit" style="width: 150px; height: 30px; font-size: 18px">              
                     </td>
-                    <td style="text-align: left;">
+                    <td style="text-align: center;">
                         <br><br><input type="reset" value="Reset" style="width: 150px; height: 30px; font-size: 18px">
                     </td>
-                    <td colspan="2" style="text-align: left ;"><br><br><a href="./home.php">Back</a></td>
+                    <td colspan="2" style="text-align: center ;"><br><br><a href="./home.php">Back</a></td>
                                     
                 </tr>   
 
