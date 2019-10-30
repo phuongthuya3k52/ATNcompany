@@ -41,7 +41,7 @@ if(isset($_POST["username"]) && isset($_POST["pass"]))
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-		<div class="header"><h1>List Of Products</h1></div>
+		<div class="header"><h1>List of Products</h1></div>
 		<div class="content">
 			<form action="search.php" method="GET">
 				<div style="text-align: right">
@@ -86,7 +86,11 @@ if(isset($_POST["username"]) && isset($_POST["pass"]))
 				<form action='/delete.php' method="POST">
 		        	<input type='hidden' name='idtoy' value='<?php echo $row['idtoy']?>'>
 		        	<input class="edit-btn" type='submit' value='Delete'>
-		        </form> <br>
+		        </form> <br><br>
+		        <form action='/edit.php' method="GET">
+		        	<input type='hidden' name='idtoy' value='<?php echo $row['idtoy']?>'>
+		        	<input class="edit-btn" type='submit' value='Edit'>
+		        </form> 
 		        </td>
 			</tr>
 	<?php
@@ -94,6 +98,6 @@ if(isset($_POST["username"]) && isset($_POST["pass"]))
 	?>
 			</table></br>
 		</div>
-		<div class="last"><a href="/add.php" style="font-size: 24px">Add New Product</a></div>
+		<div style="text-align: center;"><a href="/add.php" style="font-size: 24px">Add New Product</a></div>
 </body>
 </html>
