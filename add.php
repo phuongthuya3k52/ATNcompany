@@ -60,7 +60,7 @@
                     }
             }
 			?>
-        <table align="center" border ="0px" style="font-size: 24px; width: 80%; text-align: right;" cellspacing="12px" >
+        <table align="center" border ="0px" style="font-size: 24px; width: 70%; text-align: left;" cellspacing="12px" >
             <form action="add.php" method="POST">
                 <tr>
                     <td colspan="4" style="text-align:center"><h1 style="background-color: white, font-size:36px">Adding New Product Form</h1></td>
@@ -68,21 +68,21 @@
                 <tr>
                     <td >Product ID: </td>
                     <td ><input type="text" name="idtoy" class="text"></td>
-
+                    <td></td>
                     <td>Product name: </td>
                     <td><input type="text" name="name" class="text"></td>
                 </tr>
                 <tr>
                     <td >idCat: </td>
                     <td ><input type="text" name="idcat" class="text"></td>
-
+                    <td></td>
                     <td>Brand: </td>
                     <td><input type="text" name="brand" class="text"></td>
                 </tr>
                  <tr>
                     <td >Price: </td>
                     <td ><input type="text" name="price" class="text"></td>
-
+                    <td></td>
                     <td>Link Image: </td>
                     <td><input type="text" name="image" class="text"></td>
                 </tr>
