@@ -10,9 +10,9 @@
 <body>
 	<?php 
         require("dbconnector.php");   
-        if(isset($_GET['idto']))
+        if(isset($_GET['idtoy']))
         {
-        	$tid=$_GET['idto'];
+        	$tid=$_GET['idtoy'];
            	$sql = "select * from Toy where where idToy='" .$tid . "'";
 			$stmt = $pdo->prepare($sql1); 
 			$stmt->setFetchMode(PDO::FETCH_ASSOC); 
