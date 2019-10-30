@@ -20,7 +20,7 @@
 				$rows = pg_query($sql);
 				if(pg_num_rows($rows)>0){
 		?>
-					<br><div >Results returned with the keyword "<?php echo $se ?>": </div><br>
+					<br><h1 style="text-align: center;" >Results returned with the keyword "<?php echo $se ?>": </h1><br>
 
 					<div>
 						<table border ="1px solid #333" style="text-align:center">
