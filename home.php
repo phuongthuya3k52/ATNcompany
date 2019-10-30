@@ -52,6 +52,7 @@ if(isset($_POST["username"]) && isset($_POST["pass"]))
 
 			<table border ="1px solid #333" style="text-align:center" >
 			<tr>
+				<th>No.</th>
 				<th class="Bz">ID</th> 
 				<th class="Bz">Image</th>
 				<th class="Bz">Name</th>
@@ -68,9 +69,12 @@ if(isset($_POST["username"]) && isset($_POST["pass"]))
         $stmt->setFetchMode(PDO::FETCH_ASSOC); 
         $stmt->execute();
         $resultSet = $stmt->fetchAll();
+        $i=0;
         foreach ($resultSet as $row) {
+        	$i++;
         ?>
 			<tr>
+				<td><?=$i?></td>
 				<td class="Bz"><?= $row['idtoy']?></td> 
 				<td class="Bz"> <img src=" <?= $row['image']?>" alt="" width="100%" height="100%"></td> 
 				<td class="Bz"><?= $row['toyname']?></td>
@@ -86,7 +90,7 @@ if(isset($_POST["username"]) && isset($_POST["pass"]))
 		        </td>
 			</tr>
 	<?php
-	}
+			}
 	?>
 			</table></br>
 		</div>
