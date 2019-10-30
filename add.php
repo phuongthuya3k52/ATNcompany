@@ -60,8 +60,45 @@
                     }
             }
 			?>
-        <form action="add.php" method="POST">
-            <table align="center">
+        <table align="center" style="font-size: 24px; width: 110px; text-align: right;" cellspacing="12px" >
+            <form action="add.php" method="POST">
+                <tr>
+                    <td colspan="4" style="text-align:center"><h1>Adding New Product Form</h1></td>
+                </tr>
+                <tr>
+                    <td >Product ID: </td>
+                    <td ><input type="text" name="idtoy" class="text"></td>
+
+                    <td>Product name: </td>
+                    <td><input type="text" name="name" class="text"></td>
+                </tr>
+                <tr>
+                    <td >idCat: </td>
+                    <td ><input type="text" name="idcat" class="text"></td>
+
+                    <td>Brand: </td>
+                    <td><input type="text" name="brand" class="text"></td>
+                </tr>
+                 <tr>
+                    <td >Price: </td>
+                    <td ><input type="text" name="price" class="text"></td>
+
+                    <td>Link Image: </td>
+                    <td><input type="text" name="image" class="text"></td>
+                </tr>
+                <tr>
+                    <td><br></td>
+                    <td colspan="2" style="text-align: center;">
+                        <br><br><input type="submit" value="Add" name="submit" style="width: 150px; height: 30px; font-size: 18px">              
+                    </td>
+                    <td style="text-align: left;">
+                        <br><br><input type="reset" value="Reset" style="width: 150px; height: 30px; font-size: 18px">
+                    </td>
+                    <td colspan="2" style="text-align: left ;"><br><br><a href="./home.php">Back</a></td>
+                                    
+                </tr>   
+
+            <!-- <table align="center">
                 <tr>
                     <td>ID</td>
                     <td><input type="text" name="idtoy"></td>
@@ -95,10 +132,11 @@
                     <td></td>
                 </tr>
             
-            </table>
-        </form>
+            </table> -->
+            </form>
+        </table>
         
-        <button><a href="/home.php">Back</a></button>
+       <!--  <button><a href="/home.php">Back</a></button> -->
     </div>
 </body>
 
