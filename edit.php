@@ -10,8 +10,8 @@
 <body>
 	<?php 
         require("dbconnector.php");   
-        if(isset($_GET['idtoy']))
-        {
+        // if(isset($_GET['idtoy']))
+        // {
         	$tid=$_GET['idtoy'];
            	$sql = "select * from Toy where where idToy='" .$tid . "'";
 			$stmt = $pdo->prepare($sql1); 
@@ -109,7 +109,7 @@
                     }
                 }
             }
-        }
+        //}
 	?>
 </body>
 </html>
