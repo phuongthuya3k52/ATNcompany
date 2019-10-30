@@ -76,15 +76,8 @@
             		</script>
             	<?php
 				}
-			}else{
-				?>
-				<script>
-                	alert("You must enter the content to search!");
-               		window.location.href = "/home.php";
-            	</script>
-			<?php
 			}
-				?>
+			?>
 	</div>
 
 	
