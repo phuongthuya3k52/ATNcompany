@@ -17,17 +17,17 @@
 			if (isset($_GET['search'])) 
 			{
 				$sql = "select * from Toy where toyname like '%" .$se ."%'";  
-				$stmt = $pdo->prepare($sql); 
-        		$stmt->setFetchMode(PDO::FETCH_ASSOC); 
-        		$stmt->execute();
-        		$resultSet = $stmt->fetchAll();
-        		if (count($resultSet)>0) {
+				$rows = pg_query($sql);
+				if(pg_num_rows($rows)>0){
 		?>
-					<br>
-					<div >Results returned with the keyword "<?php echo $se ?>": </div><br> 
-					<?php			
-						foreach ($resultSet as $row) {
-        			?>
+					<br><div >Results returned with the keyword "<?php echo $se ?>": </div><br>
+				<?php  
+					$stmt = $pdo->prepare($sql); 
+			        $stmt->setFetchMode(PDO::FETCH_ASSOC); 
+			        $stmt->execute();
+			        $resultSet = $stmt->fetchAll();
+					foreach ($resultSet as $row) {
+				?> 
 						<tr>
 							<td class="Bz"><?= $row['idtoy']?></td> 
 							<td class="Bz"> <img src=" <?= $row['image']?>" alt="" width="100%" height="100%"></td> 
@@ -43,20 +43,17 @@
 					        </form> <br>
 					        </td>
 						</tr>
-					<?php
-						}
-				}
-				else
-				{
+				<?php 
+					}
+				
+				} else{
 					echo ('<span style="color:red; text-align:center; font-size:26px;">No results were found!</span>');
-				}										
-			}
-			else 
-			{
+				}
+			}else{
 				echo "Enter the content to search";
 			}
-		?>	
-		</div>
+				?>
+	</div>
 
 	
 
