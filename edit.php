@@ -8,10 +8,11 @@
 	<title>edit</title>
 </head>
 <body>
+	<div>aaaa</div>
 	<?php 
         require("dbconnector.php");   
-        // if(isset($_GET['idtoy']))
-        // {
+        if(isset($_GET['idtoy']))
+        {
         	$tid=$_GET['idtoy'];
            	$sql = "select * from Toy where where idToy='" .$tid . "'";
 			$stmt = $pdo->prepare($sql1); 
@@ -73,11 +74,11 @@
             $detail = $_POST["detail"];
             if ($name == ""|| $idcat == ""|| $brand == ""|| $price == ""|| $detail == ""||$image==""||$idtoy=="") 
             {
-                ?>
+    ?>
                     <script>
                         alert("Product information should not be blank!!");
                     </script>
-                <?php
+            <?php
             }
             else
             {
@@ -85,11 +86,11 @@
                 $query = pg_query($conn, $sql);
                 if(pg_num_rows($query)>0)
                 {
-                    ?> 
+            ?> 
                         <script>
                         	alert("The product ID is available!!");
                         </script>
-                    <?php
+            	<?php
                 }
                 else
                 {
@@ -100,7 +101,7 @@
                     } 
                     else 
                     {
-                        ?> 
+                ?> 
                             <script>
                                 alert("Edit successful!");
                                 window.location.href = "/home.php";
@@ -109,7 +110,7 @@
                     }
                 }
             }
-        //}
+        }
 	?>
 </body>
 </html>
