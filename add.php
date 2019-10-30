@@ -60,7 +60,7 @@
                     }
             }
 			?>
-        <table align="center" border ="0" style="font-size: 24px; width: 80%; text-align: right;" cellspacing="12px" >
+        <table align="center" border ="0px" style="font-size: 24px; width: 80%; text-align: right;" cellspacing="12px" >
             <form action="add.php" method="POST">
                 <tr>
                     <td colspan="4" style="text-align:center"><h1>Adding New Product Form</h1></td>
