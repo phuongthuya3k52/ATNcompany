@@ -14,7 +14,15 @@
     <div class="content">
 		<?php 
 			$se=$_GET['search'];
-			if (isset($_GET['search'])) 
+			if ($se==""){
+		?>
+				<script>
+                	alert("You must enter the content to search!");
+               		window.location.href = "/home.php";
+            	</script>
+			<?php
+			}
+			else if (isset($_GET['search'])) 
 			{
 				$sql = "select * from Toy where toyname like '%" .$se ."%'";  
 				$rows = pg_query($sql);
@@ -22,6 +30,7 @@
 		?>
 					<br><h1 style="text-align: center;" >Results returned with the keyword "<?php echo $se ?>": </h1><br>
 
+					<div><a href="home.php">Back to list of Product</a></div>
 					<div>
 						<table border ="1px solid #333" style="text-align:center">
 							<tr>
