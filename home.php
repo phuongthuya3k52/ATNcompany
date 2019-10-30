@@ -43,7 +43,7 @@ if(isset($_POST["username"]) && isset($_POST["pass"]))
 <body>
 		<div class="header"><h1>Product</h1></div>
 		<div class="content">
-			<table>
+			<table align="center" border ="1px solid" style="font-size: 24px; width: 90%; text-align: right; background-color: #fff;" cellspacing="12px">
 			<tr>
 				<th class="Bz">ID</th> 
 				<th class="Bz">Image</th>
@@ -62,7 +62,6 @@ if(isset($_POST["username"]) && isset($_POST["pass"]))
         $resultSet = $stmt->fetchAll();
         foreach ($resultSet as $row) {
         ?> 
-        	 <table align="center" border ="1px solid" style="font-size: 24px; width: 90%; text-align: right; background-color: #fff;" cellspacing="12px" >
 			<tr>
 				<td class="Bz"><?= $row['idtoy']?></td> 
 				<td class="Bz"> <img src=" <?= $row['image']?>" alt="" width="100%" height="100%"></td> 
@@ -78,7 +77,6 @@ if(isset($_POST["username"]) && isset($_POST["pass"]))
 		        </form> <br>
 		        </td>
 			</tr>
-			</table>
 	<?php
 	}
 	?>
