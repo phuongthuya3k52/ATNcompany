@@ -63,7 +63,7 @@
         <table align="center" border ="0px" style="font-size: 24px; width: 70%; text-align: center;" cellspacing="12px" >
             <form action="add.php" method="POST">
                 <tr>
-                    <td colspan="4" style="text-align:center"><h1 style="background-color: white, font-size:36px; text-align:center">Adding New Product Form</h1></td>
+                    <td colspan="4" style="text-align:center"><h1 style="background-color: white, font-size:36px;">Adding New Product Form</h1></td>
                 </tr>
                 <tr>
                     <td >Product ID: </td>
