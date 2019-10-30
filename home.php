@@ -87,11 +87,10 @@ if(isset($_POST["username"]) && isset($_POST["pass"]))
 		        	<input type='hidden' name='idtoy' value='<?php echo $row['idtoy']?>'>
 		        	<input class="edit-btn" type='submit' value='Delete'>
 		        </form> <br><br>
-		        <a href="./edit.php?idtoy=<?=$row['idtoy']?>">Edit</a>
-		        <!-- <form action='/edit.php' method="GET">
+		        <form action='/edit.php' method="GET">
 		        	<input type='hidden' name='idto' value='<?php echo $row['idtoy']?>'>
 		        	<input class="edit-btn" type='submit' value='Edit'>
-		        </form> --> 
+		        </form> 
 		        </td>
 			</tr>
 	<?php
