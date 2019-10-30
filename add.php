@@ -87,7 +87,6 @@
                     <td><input type="text" name="image" class="text"></td>
                 </tr>
                 <tr>
-                    <td><br></td>
                     <td colspan="2" style="text-align: center;">
                         <br><br><input type="submit" value="Add" name="submit" style="width: 150px; height: 30px; font-size: 18px">              
                     </td>
