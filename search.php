@@ -28,7 +28,7 @@
 				$rows = pg_query($sql);
 				if(pg_num_rows($rows)>0){
 		?>
-					<br><h1 style="text-align: center;" >Results returned with the keyword "<?php echo $se ?>": </h1><br>
+					<br><h1 style="text-align: center;" >Results returned with the keyword "<?php echo $se ?>" </h1><br>
 
 					<div style="text-align: right;"><a href="home.php" style="font-size: 22px;">Back to list of Product</a></div><br>
 					<div>
@@ -68,7 +68,11 @@
 									<form action='/delete.php' method="POST">
 							        	<input type='hidden' name='idtoy' value='<?php echo $row['idtoy']?>'>
 							        	<input class="edit-btn" type='submit' value='Delete'>
-							        </form> <br>
+							        </form> <br><br>
+							        <form action='/edit.php' method="GET">
+							        	<input type='hidden' name='idtoy' value='<?php echo $row['idtoy']?>'>
+							        	<input class="edit-btn" type='submit' value='Edit'>
+							        </form> 
 							        </td>
 								</tr>
 						<?php 
