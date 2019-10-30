@@ -45,7 +45,7 @@ if(isset($_POST["username"]) && isset($_POST["pass"]))
 		<div class="content">
 			<form action="search.php" method="GET">
 				<div style="text-align: right">
-					<input type="text" name="search" style="background-color: white, border:1px solid"> <input type="submit" value="Search" style="background-color: white, border:1px solid">
+					<input type="text" name="search" style="background-color: white; border:1px solid"> <input type="submit" value="Search" style="background-color: white; border:1px solid">
 				</div>	
 			<br>
 			</form>
