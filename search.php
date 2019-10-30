@@ -9,7 +9,7 @@
 </head>
 <body>
 	<?php 
-        require("dbconnector.php");
+        require("./dbconnector.php");
     ?>
     <div>
 		<?php 
@@ -47,10 +47,20 @@
 					}
 				
 				} else{
-					echo ('<span style="color:red; text-align:center; font-size:26px;">No results were found!</span>');
+				?>
+					<script>
+                		alert("No results were found!");
+               			window.location.href = "/home.php";
+            		</script>
+            	<?php
 				}
 			}else{
-				echo "Enter the content to search";
+				?>
+				<script>
+                	alert("You must enter the content to search!");
+               		window.location.href = "/home.php";
+            	</script>
+			<?php
 			}
 				?>
 	</div>
