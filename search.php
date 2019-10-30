@@ -25,6 +25,7 @@
 					<div>
 						<table border ="1px solid #333" style="text-align:center">
 							<tr>
+								<th>No.</th>
 								<th class="Bz">ID</th> 
 								<th class="Bz">Image</th>
 								<th class="Bz">Name</th>
@@ -41,17 +42,20 @@
 					        $stmt->setFetchMode(PDO::FETCH_ASSOC); 
 					        $stmt->execute();
 					        $resultSet = $stmt->fetchAll();
+					        $i=0;
 							foreach ($resultSet as $row) {
+								$i++;
 						?> 
 								<tr>
-									<td class="Bz">a<?= $row['idtoy']?></td> 
-									<td class="Bz">b <img src=" <?= $row['image']?>" alt="" width="100%" height="100%"></td> 
-									<td class="Bz">c<?= $row['toyname']?></td>
-									<td class="Bz">d<?= $row['idcat']?></td>
-									<td class="Bz">e<?= $row['brand']?></td>
-									<td class="Bz">f<?= $row['price']?></td>
-									<td class="Bz">g<?= $row['decrips']?></td>
-									<td> h
+									<td><?=$i?></td>
+									<td class="Bz"><?= $row['idtoy']?></td> 
+									<td class="Bz"> <img src=" <?= $row['image']?>" alt="" width="100%" height="100%"></td> 
+									<td class="Bz"><?= $row['toyname']?></td>
+									<td class="Bz"><?= $row['idcat']?></td>
+									<td class="Bz"><?= $row['brand']?></td>
+									<td class="Bz"><?= $row['price']?></td>
+									<td class="Bz"><?= $row['decrips']?></td>
+									<td> 
 									<form action='/delete.php' method="POST">
 							        	<input type='hidden' name='idtoy' value='<?php echo $row['idtoy']?>'>
 							        	<input class="edit-btn" type='submit' value='Delete'>
