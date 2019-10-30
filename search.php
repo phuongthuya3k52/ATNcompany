@@ -43,14 +43,14 @@
 							foreach ($resultSet as $row) {
 						?> 
 								<tr>
-									<td class="Bz"><?= $row['idtoy']?></td> 
-									<td class="Bz"> <img src=" <?= $row['image']?>" alt="" width="100%" height="100%"></td> 
-									<td class="Bz"><?= $row['toyname']?></td>
-									<td class="Bz"><?= $row['idcat']?></td>
-									<td class="Bz"><?= $row['brand']?></td>
-									<td class="Bz"><?= $row['price']?></td>
-									<td class="Bz"><?= $row['decrips']?></td>
-									<td>
+									<td class="Bz">a<?= $row['idtoy']?></td> 
+									<td class="Bz">b <img src=" <?= $row['image']?>" alt="" width="100%" height="100%"></td> 
+									<td class="Bz">c<?= $row['toyname']?></td>
+									<td class="Bz">d<?= $row['idcat']?></td>
+									<td class="Bz">e<?= $row['brand']?></td>
+									<td class="Bz">f<?= $row['price']?></td>
+									<td class="Bz">g<?= $row['decrips']?></td>
+									<td> h
 									<form action='/delete.php' method="POST">
 							        	<input type='hidden' name='idtoy' value='<?php echo $row['idtoy']?>'>
 							        	<input class="edit-btn" type='submit' value='Delete'>
