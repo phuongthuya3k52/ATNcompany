@@ -43,7 +43,7 @@ if(isset($_POST["username"]) && isset($_POST["pass"]))
 <body>
 		<div class="header"><h1>Product</h1></div>
 		<div class="content">
-			<table border ="1px solid #333">
+			<table border ="1px solid #333" style="text-align:center" >
 			<tr>
 				<th class="Bz">ID</th> 
 				<th class="Bz">Image</th>
