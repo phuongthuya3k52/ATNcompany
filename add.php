@@ -8,8 +8,7 @@
     <title>Add</title>
 </head>
 <body>
-    <div>
-        <!-- <div class = "header">Adding Product Form</div> -->
+
         <?php 
         require("dbconnector.php");   
         if(isset($_POST["submit"]))
@@ -31,7 +30,7 @@
                     }
                 else
                     {
-                        $sql = "select * from toy where toyName='$name'";
+                        $sql = "select * from toy where idToy='$idtoy'";
                         $query = pg_query($conn, $sql);
                         if(pg_num_rows($query)>0)
                         {
@@ -44,7 +43,6 @@
                         else
                         {
                             $sql = "Insert into Toy (idToy,toyName,idcat,brand,price,image,decrips) values ('$idtoy','$name','$idcat','$brand','$price','$image','$detail')";
-                            // pg_query($conn,$sql);
                             $res =pg_query($conn, $sql);
                             if(!$res) {
                                 echo pg_last_error($conn);
@@ -60,6 +58,7 @@
                     }
             }
 			?>
+    <div>
         <table align="center" border ="0px" style="font-size: 24px; width: 70%; text-align: center;" cellspacing="12px" >
             <form action="add.php" method="POST">
                 <tr>
@@ -97,8 +96,7 @@
                                     
                 </tr>   
             </form>
-        </table>
-        
+        </table>        
     </div>
 </body>
 
