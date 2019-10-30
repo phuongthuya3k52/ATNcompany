@@ -11,9 +11,9 @@
 	<div>aaaa</div>
 	<?php 
         require("dbconnector.php");   
-        if(isset($_GET['idtoy']))
+        if(isset($_GET['id']))
         {
-        	$tid=$_GET['idtoy'];
+        	$tid=$_GET['id'];
            	$sql = "select * from Toy where where idToy='" .$tid . "'";
 			$stmt = $pdo->prepare($sql1); 
 			$stmt->setFetchMode(PDO::FETCH_ASSOC); 
