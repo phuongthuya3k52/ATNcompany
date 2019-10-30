@@ -94,6 +94,6 @@ if(isset($_POST["username"]) && isset($_POST["pass"]))
 	?>
 			</table></br>
 		</div>
-		<div class="last"><button><a href="/add.php" style="font-weight: 1px, font-size: 22px">Add</a></button></div>
+		<div class="last"><a href="/add.php" style="font-size: 24px">Add</a></div>
 </body>
 </html>
