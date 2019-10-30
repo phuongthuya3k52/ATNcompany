@@ -10,6 +10,7 @@
 <body>
 	<?php 
         require("dbconnector.php");   
+        require("connect.php"); 
         if(isset($_GET['submit']))
         {
         	$tid=$_GET['submit'];
@@ -51,7 +52,7 @@
 	                </tr>
 	                <tr>
 	                    <td colspan="2" style="text-align: center;">
-	                        <br><br><input type="submit" value="Add" name="submit" style="width: 150px; height: 30px; font-size: 18px">              
+	                        <br><br><input type="submit" value="Save" name="submit" style="width: 150px; height: 30px; font-size: 18px">              
 	                    </td>
 	                    <td style="text-align: center;">
 	                        <br><br><input type="reset" value="Reset" style="width: 150px; height: 30px; font-size: 18px">
