@@ -30,7 +30,7 @@
 		?>
 					<br><h1 style="text-align: center;" >Results returned with the keyword "<?php echo $se ?>": </h1><br>
 
-					<div><a href="home.php">Back to list of Product</a></div>
+					<div><a href="home.php" style="text-align: right; font-size: 22px;">Back to list of Product</a></div>
 					<div>
 						<table border ="1px solid #333" style="text-align:center">
 							<tr>
