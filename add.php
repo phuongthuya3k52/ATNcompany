@@ -63,7 +63,7 @@
         <table align="center" border ="0px" style="font-size: 24px; width: 70%; text-align: center;" cellspacing="12px" >
             <form action="add.php" method="POST">
                 <tr>
-                    <td colspan="4" style="text-align:center"><h1 style="background-color: white, font-size:36px;">Adding New Product Form</h1></td>
+                    <td colspan="5" style="text-align:center "><h1 style="background-color: white; font-size:36px; ">Adding New Product Form</h1></td>
                 </tr>
                 <tr>
                     <td >Product ID: </td>
@@ -93,49 +93,12 @@
                     <td style="text-align: center;">
                         <br><br><input type="reset" value="Reset" style="width: 150px; height: 30px; font-size: 18px">
                     </td>
-                    <td colspan="2" style="text-align: center ;"><br><br><a href="./home.php">Back</a></td>
+                    <td colspan="2" style="text-align: center ;"><br><br><a href="./home.php">Back to Product List</a></td>
                                     
                 </tr>   
-
-            <!-- <table align="center">
-                <tr>
-                    <td>ID</td>
-                    <td><input type="text" name="idtoy"></td>
-                
-                
-                    <td>Name</td>
-                    <td><input type="text" name="name"></td>
-                </tr>
-                <tr>
-                    <td>idCat</td>
-                    <td><input type="text" name="idcat"></td>
-                
-                
-                    <td>Brand</td>
-                    <td><input type="text" name="brand"></td>
-                </tr>
-                <tr>
-                    <td>Price</td>
-                    <td><input type="text" name="price"></td>
-
-                    <td>Link Image</td>
-                    <td><input type="text" name="image"></td>
-                </tr>
-
-                <tr>
-                    <td colspan="2">Detail</td>
-                    <td colspan="2"><input type="text" name="detail"></td>
-                </tr>
-                <tr>
-                    <td><button type="submit" value="Add" name="submit">Add</button></td>
-                    <td></td>
-                </tr>
-            
-            </table> -->
             </form>
         </table>
         
-       <!--  <button><a href="/home.php">Back</a></button> -->
     </div>
 </body>
 
