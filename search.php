@@ -22,7 +22,8 @@
 		?>
 					<br><div >Results returned with the keyword "<?php echo $se ?>": </div><br>
 				<?php  
-					$stmt = $pdo->prepare($sql); 
+					$sql1 = "select * from Toy where toyname like '%" .$se ."%'";
+					$stmt = $pdo->prepare($sql1); 
 			        $stmt->setFetchMode(PDO::FETCH_ASSOC); 
 			        $stmt->execute();
 			        $resultSet = $stmt->fetchAll();
