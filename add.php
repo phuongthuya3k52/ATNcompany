@@ -59,7 +59,7 @@
             }
 			?>
      <div class ="header">
-        <div style="text-align: right;"> <a href="/login.php">Logout</a></div>
+        <div style="text-align: right;"> <a href="/index.php">Logout</a></div>
     </div>
     <div>
         <table align="center" border ="0px" style="font-size: 24px; width: 70%; text-align: center;" cellspacing="12px" >
