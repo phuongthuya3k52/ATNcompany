@@ -42,7 +42,10 @@ if(isset($_POST["username"]) && isset($_POST["pass"]))
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-		<div class="header"><h1>List of Products</h1></div>
+		<div class="header">
+			<div style="text-align: right;"> <a href="/add.php">Logout</a></div>
+			<h1>List of Products</h1>
+		</div>
 		<div class="content">
 			<form action="search.php" method="GET">
 				<div style="text-align: right">
