@@ -1,5 +1,6 @@
 <?php 
-require_once './dbconnector.php';  
+require_once './dbconnector.php'; 
+session_start(); 
 if(isset($_POST["username"]) && isset($_POST["pass"]))
 {
 	$user = $_POST["username"];
@@ -86,12 +87,7 @@ if(isset($_POST["username"]) && isset($_POST["pass"]))
 					<form action='/delete.php' method="POST">
 			        	<input type='hidden' name='idtoy' value='<?php echo $row['idtoy']?>'>
 			        	<input class="edit-btn" type='submit' value='Delete'>
-			        </form> <br><br>
-
-			        <form action='/edit.php' method="POST">
-						<input type='hidden' name='id' value='<?php echo $row['idtoy']?>'>
-						<input class="edit-btn" type='submit' value='Edit'>
-					</form> 		        
+			        </form> <br>		        
 				</td>
 			</tr>
 	<?php
@@ -102,3 +98,8 @@ if(isset($_POST["username"]) && isset($_POST["pass"]))
 		<div style="text-align: center;"><a href="/add.php" style="font-size: 24px">Add New Product</a></div>
 </body>
 </html>
+
+<!--  <form action='/edit.php' method="POST">
+						<input type='hidden' name='id' value='<?php echo $row['idtoy']?>'>
+						<input class="edit-btn" type='submit' value='Edit'>
+					</form>  -->
