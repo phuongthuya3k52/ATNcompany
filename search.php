@@ -10,7 +10,11 @@
 <body>
 	<?php 
         require("./dbconnector.php");
+        session_start(); 
     ?>
+    <div class ="header">
+    	<div style="text-align: right;"> <a href="/login.php">Logout</a></div>
+    </div>
     <div class="content">
 		<?php 
 			$se=$_GET['search'];
