@@ -68,11 +68,7 @@
 									<form action='/delete.php' method="POST">
 							        	<input type='hidden' name='idtoy' value='<?php echo $row['idtoy']?>'>
 							        	<input class="edit-btn" type='submit' value='Delete'>
-							        </form> <br><br>
-							        <form action='/edit.php' method="GET">
-							        	<input type='hidden' name='idtoy' value='<?php echo $row['idtoy']?>'>
-							        	<input class="edit-btn" type='submit' value='Edit'>
-							        </form> 
+							        </form> <br>
 							        </td>
 								</tr>
 						<?php 
@@ -91,6 +87,10 @@
 				}
 			}
 			?>
+		<!-- <form action='/edit.php' method="GET">
+							        	<input type='hidden' name='idtoy' value='<?php echo $row['idtoy']?>'>
+							        	<input class="edit-btn" type='submit' value='Edit'>
+							        </form> -->
 	</div>
 
 	
