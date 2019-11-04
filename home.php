@@ -43,7 +43,7 @@ if(isset($_POST["username"]) && isset($_POST["pass"]))
 </head>
 <body>
 		<div class="header">
-			<div style="text-align: right;"> <a href="/add.php">Logout</a></div>
+			<div style="text-align: right;"> <a href="/login.php">Logout</a></div>
 			<h1>List of Products</h1>
 		</div>
 		<div class="content">
