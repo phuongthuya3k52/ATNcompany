@@ -35,7 +35,7 @@
 						<table border ="1px solid #333" style="text-align:center">
 							<tr>
 								<th>No.</th>
-								<th class="Bz">Product ID</th> 
+								<th class="Bz">ID</th> 
 								<th class="Bz">Image</th>
 								<th class="Bz">Name</th>
 								<th class="Bz">ID Category</th>
