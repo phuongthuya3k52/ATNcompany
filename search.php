@@ -83,7 +83,7 @@
 				} else{
 				?>
 					<script>
-                		alert("No results were found!");
+                		alert("No result was found!");
                			window.location.href = "/home.php";
             		</script>
             	<?php
