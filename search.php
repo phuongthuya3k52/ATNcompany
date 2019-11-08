@@ -48,7 +48,7 @@
 								<th></th>
 							</tr>
 						<?php  
-							require_once 'connect.php';
+							//require_once 'connect.php';
 							$sql1 = "select * from Toy where toyname like '%" .$se ."%'";
 							$stmt = $pdo->prepare($sql); 
 					        $stmt->setFetchMode(PDO::FETCH_ASSOC); 
