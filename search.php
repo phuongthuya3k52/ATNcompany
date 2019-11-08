@@ -50,7 +50,7 @@
 						<?php  
 							require_once 'connect.php';
 							$sql1 = "select * from Toy where toyname like '%" .$se ."%'";
-							$stmt = $pdo->prepare($sql1); 
+							$stmt = $pdo->prepare($sql); 
 					        $stmt->setFetchMode(PDO::FETCH_ASSOC); 
 					        $stmt->execute();
 					        $resultSet = $stmt->fetchAll();
