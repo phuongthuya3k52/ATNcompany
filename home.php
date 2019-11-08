@@ -1,25 +1,6 @@
 <?php 
 require_once './dbconnector.php'; 
 session_start(); 
-if(isset($_POST["username"]) && isset($_POST["pass"]))
-{
-	$user = $_POST["username"];
-	$pass = $_POST["pass"];
-	$sql ="SELECT * FROM Account WHERE username = '$user' AND password= '$pass'";
-	$rows = pg_query($sql);
-	if(pg_num_rows($rows)==1) { ?>
-		<script>
-            alert("Login successfully!!");
-        </script>
-    <?php
-    } else { 
-        ?>
-            <script>
-                alert("Wrong Username/Password");
-                window.location.href = "/index.php";
-            </script>
-        <?php }
-}
 ?>
 <!DOCTYPE html>
 <html>
