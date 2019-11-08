@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="/style.css">
+    <?php 
+        require("./dbconnector.php");
+    ?>
 	<title>Search product</title>
 </head>
 <body>
-	<?php 
-        require("./dbconnector.php");
-    ?>
     <div class ="header">
     	<div style="text-align: right;"> <a href="/index.php">Logout</a></div>
     </div>
